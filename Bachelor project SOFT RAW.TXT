@@ -1,0 +1,104 @@
+\documentclass{article}% use option titlepage to get the title on a page of its own.
+
+\title{Bachelor project
+SOFT}
+\date{11-03-2021}
+\author{Jonas Hein}
+\begin{document}
+\maketitle
+
+\section{The project}
+The bachelor project is a project where the student investigates a softwarerelated problem, propose a solution, and does some implementation to demonstrate the solution. The student should strive to include elements from the
+courses passed during the programme (Large Systems Development, Databases,
+Testing, System Integration).\\
+The project may be done in groups of up to 4 people. Having a larger group
+should increase the project scope, as it raises the general expectations of the
+project.\\
+The project covers 15 ECTS points, which is roughly equivalent to\\
+\begin{center} 15 · 27.4 hours = 412.5 hours\\
+\end{center}
+
+
+\section{Report }
+\textbf{Size of Report} The maximum page count for the bachelor report is given by 
+the formular below.
+\begin{center} maxPageCount = 40 + 20 · numberOfStudentss\\
+\end{center}
+
+Reports shorter than 2
+3 will usually be experienced as short, although there
+is no official minimum size.\\\\
+\textbf{Language} The report can be written in either Danish or English.\\\\
+\textbf{Contents} The report should contain a thorough description of the work that\\
+has been done during the bachelor project, as well as an evaluation and reflection
+on the work.
+\\
+\\
+\section{Report components}
+The instructors recommend the following sections to be in the report. The
+components of the report do not have to be presented in exactly the same order
+but are recommended to be present.\\\\
+\textbf{Project title }Project title Cover page: Project title, your name and student identification,
+school and supervisor.\\\\
+\textbf{Abstract} Four sentences: Problem statement, further elaborated in Introduction. It can be seen as an advertisement for the rest of the report. The final
+abstract is written in the end of the project\\
+
+\begin{itemize}
+  \item What is the problem?
+  \item Why is the problem interesting?
+  \item What is the solution?
+  \item What are the implications of the solution?
+\end{itemize}
+\textbf{Introduction} Project summary:
+\begin{itemize}
+  \item Motivation — Why this topic is important nowadays.
+  \item Project objectives — what is the expected result.
+  \item Project tasks — what is to be done for achievement of the objectives -
+steps in the work, such as getting acquainted with the state-of-the-art
+and trends in the area, selecting a development methodology, creating
+a design, selecting development tools and environments, programming,
+testing, implementation and evaluation, as appropriate.
+
+  \item Scope of the project — what is not an objective or a task.
+  \item  Brief description of the other chapters that follow — one paragraph per
+each.
+\end{itemize}
+\textbf{State of the art and trends} Survey of current technologies and similar solutions in this area – to show that you are well informed and step on the available
+achievements: For example, you can present some relevant knowledge gathered from both previously studied modules and external sources, organized in a
+structured form. Here you can also describe and compare alternative development methodologies, technologies, environments, frameworks, or programming
+2
+languages that could have been used, and to explain and argue your choice.
+Inside the text, a citation or a reference to the used sources (books, articles,
+web pages) is required. The sources can be listed either underscore, or in an
+Appendix.\\
+\textbf{Requirements specification and solution design} Formulation of project
+foundation – a solid ground of your solution: This part reflects the design process, or the methodology you have followed. Analysis – who are the users, use
+cases and scenarios, intended user experiences. The analysis lead to specifications – formal functional and non-functional requirement to the application.
+Specifications lead to requirements: you consider how to design the solution
+– system architecture, data models, visual interface, control, operability, algorithms, integration and other components, as appropriate. Use graphics for
+visual presentation of your concepts as much as possible.\\\\
+\textbf{Solution development and implementation} Presentation of the application, test procedures, deployment and maintenance environments: This part
+presents the product in technical terms. Implementation and test environment
+— test strategies, test plan, test suites, demo and screen captures, usability
+evaluation, etc. Units of code, packages, deployment, supported interfaces, algorithms, input and output, supported file formats, frameworks, servers and
+clients, etc.\\\\
+\textbf{Conclusions} Brief summary: What has been done and the benefits of it.
+Recommendation for future extensions and upgrades. Reflection on the work
+and the product.\\\\
+\textbf{Appendices} Reference of information sources - as many, as possible, listed
+according a standard (see https://ieee-dataport.org/sites/default/
+files/analysis/27/IEEE%20Citation%20Guidelines.pdf). Installation
+guide and/or user manual, if appropriate. Source code of main components, if
+appropriate.\\\\
+\textbf{Final works} Project and documentation completed. Visual (power point)
+presentation and a demo prepared. It is recommended to discuss the draft
+report with the supervisor before the final!
+
+\begin{thebibliography}{9}
+\bibitem{latexcompanion} 
+https://datsoftlyngby.github.io/soft2020fall/resources/bbe51cf2-bachelorProject.pdf. 
+
+
+\end{thebibliography}
+
+\end{document}

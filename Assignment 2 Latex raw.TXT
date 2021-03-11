@@ -1,0 +1,271 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\clearpage\maketitle
+\thispagestyle{empty}
+
+\title{First Latex}
+\author{Jonas Hein}
+\date{March 2021}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{todonotes}
+
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\section{Introduction}
+   
+This is the first ÆØÅ
+      
+Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing  
+elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et 
+neque pharetra sollicitudin.  Praesent imperdietmi nec ante. 
+Donec ullamcorper, felis non sodales...
+\section*{Second Section}
+       
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
+sollicitudin.  Praesent imperdiet mi necante...
+\todo[inline, color=green]{Green inline to-do}
+
+\begin{figure}[h!]
+\caption{A picture of the universe!}
+The universe is immense and it seems to be homogeneous, 
+in a large scale, everywhere we look at.
+
+\includegraphics{universe}
+
+There's a picture of a galaxy above
+\end{figure}
+
+\begin{figure}
+    \begin{center}\fbox{I'm a goat, mheee}\end{center}
+    \caption{a goat}\label{fig:goat}
+\end{figure}
+
+\begin{center}
+Hallo the is the centering of text
+\end{center}
+
+
+
+
+\begin{document}
+\begin{figure}%
+    \centering
+    \subfloat[\centering]{{\includegraphics[width=5cm]{universe} }}%
+    \qquad
+    \subfloat[\centering]{{\includegraphics[width=5cm]{universe} }}%
+    \caption{2 Figures side by side}%
+    \label{fig:example}%
+\end{figure}
+
+Please see Figure ~\ref{fig:goat} on page ~\pageref{fig:goat} for a prototype blah blah blah
+\todo[inline, color=green!40]{Light green inline to-do}
+
+\begin{itemize}
+  \item One entry in the list
+  \item Another entry in the list
+\end{itemize}
+\begin{itemize}
+\item[--] asdasd
+\item[--] dsfsdf
+\end{itemize}
+\begin{enumerate}
+  \item The labels consists of sequential numbers.
+  \item The numbers starts at 1 with every call to the enumerate environment.
+\end{enumerate}
+\todo[inline, color=red]{Red inline to-do}
+
+\renewcommand{\labelenumi}{\theenumi}
+\begin{document}
+\renewcommand{\theenumi}{\Roman{enumi}}%
+\begin{enumerate}
+  \item 1
+  \item 2
+  \item 3
+  \item 4
+  \item 5
+  \item 6
+  \item 7
+  \item 8
+  \item 9
+  \item 10
+  \item 11
+\end{enumerate}
+
+\renewcommand{\theenumi}{\roman{enumi}}%
+\begin{enumerate}
+  \item One
+  \item Two
+  \item Three
+\end{enumerate}
+
+
+The table \ref{table:1} is an example of referenced \LaTeX elements.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c c c||} 
+ \hline
+ Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\ 
+ 2 & 7 & 78 & 5415 \\
+ 3 & 545 & 778 & 7507 \\
+ 4 & 545 & 18744 & 7560 \\
+ 5 & 88 & 788 & 6344 \\ [1ex] 
+ \hline
+\end{tabular}
+\caption{Table to test captions and labels}
+\label{table:1}
+\end{table}
+
+\documentclass[11pt]{article}
+\usepackage{multirow}
+\begin{document}
+ 
+\begin{table}[ht]
+\caption{Multi-column and multi-row table}
+\begin{center}
+\begin{tabular}{ccc}
+    \hline
+    \multicolumn{2}{c}{\multirow{2}{*}{Multi-col-row}}&X\\
+    \multicolumn{2}{c}{}&X\\
+    \hline
+    X&X&X\\
+    \hline
+\end{tabular}
+\end{center}
+\label{tab:multicol}
+\end{table}
+ \documentclass[11pt]{article}
+\usepackage{multirow}
+\begin{document}
+ 
+\begin{table}[ht]
+\caption{Multi-row table}
+\begin{center}
+\begin{tabular}{cc}
+    \hline
+    \multirow{2}{*}{Multirow}&X\\
+    &X\\
+    \hline
+\end{tabular}
+\end{center}
+\label{tab:multicol}
+\end{table}
+ Please see Figure ~\ref{tab:multicol} on page ~\pageref{tab:multicol} for a prototype blah blah blah
+ \clearpage
+ 
+ 
+ 
+ 
+ \begin{lstlisting}
+// Hello.java
+import javax.swing.JApplet;
+import java.awt.Graphics;
+
+public class Hello extends JApplet {
+    public void paintComponent(Graphics g) {
+        g.drawString("Hello, world!", 65, 95);
+    }    
+}
+\end{lstlisting}
+ 
+ \begin{equation}
+\label{eq:sedov}
+R(t)= A \left(\frac{E_0}{\rho_0}\right)^{1/5}t^{2/5}
+\end{equation}
+
+
+ 
+\text{velocity} = \frac{\text{distance}} {\text{unit of time}}
+ 
+ 
+ \begin{align}
+F = f_1+f_2+f_3+...+f_n
+\intertext{can be written as}
+\sum_1^n{f_i}
+\end{align}
+
+\[\frac{1^2}{2^4}\]
+
+\[ \int_{a}^{b} x^2 \,dx \]
+Integral $\int_{a}^{b} x^2 \,dx$ inside text
+
+
+\noindent
+The square root of 100 is $\sqrt{100}=10$. 
+\\
+But the cubic root of 64 is $\sqrt[3]{64}=4$.
+
+
+
+\begin{thebibliography}{9}
+\bibitem{latexcompanion} 
+Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
+\textit{The \LaTeX\ Companion}. 
+Addison-Wesley, Reading, Massachusetts, 1993.
+
+\bibitem{einstein} 
+Albert Einstein. 
+\textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) 
+[\textit{On the electrodynamics of moving bodies}]. 
+Annalen der Physik, 322(10):891–921, 1905.
+
+\bibitem{knuthwebsite} 
+Knuth: Computers and Typesetting,
+\\\texttt{http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html}
+\end{thebibliography}
+
+ 
+ \todo{default to-do}This is text that needs some attention.\\
+\todo[inline]{Default inline to-do}
+\todo[inline, color=green]{Green inline to-do}
+\todo[inline, color=green!40]{Light green inline to-do}
+\todo[inline, color=red]{Red inline to-do}
+\todo[inline, color=red!40]{Light red inline to-do}
+ 
+
+
+ 
+ 
+ 
+\end{document}
+\end{document}
+\end{document}
+\end{document}
+\end{document}
+\end{document}
+\end{document}
+
+
